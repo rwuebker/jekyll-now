@@ -51,11 +51,13 @@ If the recursive nature is too difficult to model in your head it never hurts
 to grab a whiteboard or pen and paper and map out what is going on.  Many times
 you might want to write the function calls piling on top of each other and then
 removing them when they return like a stack:
+
+```javascript
                                                 factorial(0)    1
                                 factorial(1)    factorial(1)    factorial(1)    1
                 factorial(2)    factorial(2)    factorial(2)    factorial(2)    factorial(2)    2
 factorial(3) -> factorial(3) -> factorial(3) -> factorial(3) -> factorial(3) -> factorial(3) -> factorial(3) -> 6
-
+```
 
 
 ```javascript
