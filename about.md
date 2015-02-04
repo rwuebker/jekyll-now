@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Currently studying Software Engineering at Hack Reactor, San Francisco, CA.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+Interested in Web Development, Software Engineering, Start-Ups, Predictive Analytics and Quantitative Finance
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[rlwuebker@gmail.com](mailto:rlwuebker@gmail.com)
