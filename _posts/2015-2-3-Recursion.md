@@ -32,7 +32,7 @@ var factorial = function(val){
 }
 ```
 
-#Tip \#1 - Base Case (or exit condition)
+#Base Case (or exit condition)
 
 I always like to first note the base case.  This is where the recursive function
 would end and stop recursing.  This is very important, as without this check
@@ -45,7 +45,7 @@ base case is defined right after the input check:
   }
 ```
 
-#Tip \#2 - When in doubt, map it out
+#When in doubt, map it out
 
 If the recursive nature is too difficult to model in your head it never hurts
 to grab a whiteboard or pen and paper and map out what is going on.  There are
@@ -92,7 +92,7 @@ var contains = function(list, val){
   return drilldown(list.head);
 };
 ```
-#Tip \#3 - Don't forget to return the recursive results if necessary
+#Don't forget to return the recursive results if necessary
 
 Many times with more complex recursive situations you might find yourself not returning
 results correctly.  For example, here is an incorrect version of the 'contains'
@@ -121,7 +121,7 @@ var contains = function(list, val){
 The above function would not work due to it not returning the necessary value
 in the 'else if' block.
 
-#Tip \#4 - Finally, loops are sometimes more useful than recursing
+#Finally, loops are sometimes more useful than recursing
 
 Depending on your situation, a loop might make more sense.  Loops can't always be substitutes for recurssion but they might provide a more intuitive solution and might be more efficient.  Here is the factorial algorithm implemented with a for-loop:
 
