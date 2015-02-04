@@ -11,7 +11,7 @@ using recursive techniques.  Although a powerful tool, recursion can lead to
 some head-banging confusion.  I've put together some things to keep in mind
 while writing your recursive algorithms.
 
-For this tutorial I will demonstrate with a simple recursive function to
+For this tutorial I will start with a simple recursive function to
 calculate the factorial of a number:
 
 ```javascript
@@ -22,19 +22,19 @@ var factorial = function(val){
     return null;
   }
 
-  //here's the meat
-
+  //base case
   if(val === 0){
     return 1;
   }
-
+  
+  //returning a recursive call
   return val * factorial(val-1);
 }
 ```
 
-#\#1 - Base Case (or exit condition)
+#Tip \#1 - Base Case (or exit condition)
 
-I always like to first note what the base would be where the recursive function
+I always like to first note the base case.  This is where the recursive function
 would end and stop recursing.  This is very important, as without this check
 the function would continue to call itself without end.  In our example, the
 base case is defined right after the input check:
@@ -45,12 +45,12 @@ base case is defined right after the input check:
   }
 ```
 
-#\#2 - When in doubt, map it out
+#Tip \#2 - When in doubt, map it out
 
 If the recursive nature is too difficult to model in your head it never hurts
 to grab a whiteboard or pen and paper and map out what is going on.  There are
 many ways to do this.  Many times you might want to write the function calls
-piling on top of each other and then removing them when they return like a
+piling on top of each other and then removing them when they return, like a
 stack.  In this case due to simplicity we could rewrite each function in terms
 of its recursive call:
 
@@ -94,7 +94,7 @@ var contains = function(list, val){
 ```
 #Tip \#3 - Don't forget to return the recursive results if necessary
 
-Many times with more complex recursive situations I find myself not returning
+Many times with more complex recursive situations you might find yourself not returning
 results correctly.  For example, here is an incorrect version of the 'contains'
 function above, but without a very important 'return' keyword.  Can you spot
 it?
@@ -121,7 +121,7 @@ var contains = function(list, val){
 The above function would not work due to it not returning the necessary value
 in the 'else if' block.
 
-#Tip\#4 - Finally, loops are sometimes more useful than recursing
+#Tip \#4 - Finally, loops are sometimes more useful than recursing
 
 Depending on your situation, a loop might make more sense.  Loops can't always be substitutes for recurssion but they might provide a more intuitive solution and might be more efficient.  Here is the factorial algorithm implemented with a for-loop:
 
