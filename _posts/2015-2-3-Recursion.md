@@ -95,9 +95,8 @@ var contains = function(list, val){
 #Don't forget to return the recursive results if necessary
 
 Many times with more complex recursive situations you might find yourself not returning
-results correctly.  For example, here is an incorrect version of the 'contains'
-function above, but without a very important 'return' keyword.  Can you spot
-it?
+results correctly.  For example, here is an *incorrect* version of the 'contains'
+function above, but without a very important 'return' keyword.
 
 ```javascript
 var contains = function(list, val){
@@ -119,7 +118,7 @@ var contains = function(list, val){
 ```
 
 The above function would not work due to it not returning the necessary value
-in the 'else if' block.
+in the 'else if' block.  
 
 #Finally, loops are sometimes more useful than recursing
 
