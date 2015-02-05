@@ -10,7 +10,7 @@ Pair programming is a method used in many development environments where two sof
 
 When pair programming, both developers will each have a monitor, mouse and keyboard connected to the same computer.  Ideally, one developer would be designated as the driver and the other as the navigator.  The driver takes on the role of typing while the navigator instructs the driver on what to type and where.
 
-# Who should drive and who should navigate?
+### Who should drive and who should navigate?
 
 After doing the usual pre-coding work, i.e. whiteboarding to find the best solution and writing out some pseudocode, they could switch off driving and navigating every 20 minutes or so.  This gives each a chance to try out each of these roles. 
 
