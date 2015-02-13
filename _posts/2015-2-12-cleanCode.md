@@ -21,7 +21,7 @@ There is no keyboard shortcut for this, but you could add one by going to Prefer
 { "keys": ["ctrl+k","ctrl+l"],"command":"reindent","args": {"single_line": false}}
 
 ```
-This will allow you to reinded your entire document by clicking 'ctrl+k+l' without highlighting anything.
+This will allow you to reindent your entire document by clicking 'ctrl+k+l' without highlighting anything.
 
 ###Use Descriptive Variable Names
 
@@ -29,11 +29,15 @@ This is another expected practice when working in teams.  If you are still using
 
 Bad
 ```javascript
-  var x = 0;
+
+var x = 0;
+
 ```
 Good
 ```javascript
+
   var counterForVisits = 0;
+
 ```
 
 ###Keep Functions Simple
