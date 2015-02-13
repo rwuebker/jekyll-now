@@ -28,12 +28,15 @@ This will allow you to reindent your entire document by clicking 'ctrl+k+l' with
 This is another expected practice when working in teams.  If you are still using variable names like 'x' or 'z', people are going to be very upset with you.  You might also be upset with yourself a month down the road when you're revisiting your code and trying to figure out what you meant.  Programming can be difficult enough without putting the task of trying to decipher your code onto your teammates.
 
 Bad
+
 ```javascript
 
 var x = 0;
 
 ```
+
 Good
+
 ```javascript
 
   var counterForVisits = 0;
